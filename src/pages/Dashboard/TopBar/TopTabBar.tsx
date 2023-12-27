@@ -3,6 +3,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import ChatScreen from './chat';
 import CallScreen from './call';
 import StatusScreen from './status';
+import ChatHomeScreen from './chatHome';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -11,6 +12,7 @@ const TopTabBar = () => {
     <Tab.Navigator>
       <Tab.Screen name="Status" component={StatusScreen} />
       <Tab.Screen name="Chat" component={ChatScreen} />
+      <Tab.Screen name="ChatHome" component={ChatHomeScreen} />
       <Tab.Screen name="Calls" component={CallScreen} />
     </Tab.Navigator>
   );
